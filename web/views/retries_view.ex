@@ -6,7 +6,7 @@ defmodule VerkWeb.RetriesView do
       %{
         jid: failed_job.jid,
         retry_count: failed_job.retry_count,
-        score: score |> Timex.from_unix |> Timex.format!("{relative}", :relative),
+        score: score |> DateTime.from_unix! |> DateTime.to_string,
         class: failed_job.class,
         args: failed_job.args |> inspect,
         original_json: failed_job.original_json,
