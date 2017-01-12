@@ -26,7 +26,7 @@ defmodule VerkWeb.PageView do
 
   def uptime do
     {time, _} = :erlang.statistics(:wall_clock)
-    Timex.Duration.from_milliseconds(time) |> Timex.format_duration(:humanized)
+    Calendar.DateTime.Parse. js_ms!(time) |> Calendar.DateTime.Format.rfc3339
   end
 
   def process_count, do: :erlang.system_info(:process_count)

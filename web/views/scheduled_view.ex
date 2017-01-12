@@ -4,7 +4,7 @@ defmodule VerkWeb.ScheduledView do
   def scheduled_jobs(jobs) do
     Enum.map jobs, fn {job, perform_at} ->
       %{
-        perform_at: Timex.from_unix(perform_at),
+        perform_at: Calendar.DateTime.Parse.unix!(perform_at),
         queue: job.queue,
         jid: job.jid,
         class: job.class,
@@ -15,6 +15,6 @@ defmodule VerkWeb.ScheduledView do
   end
 
   def perform_at(datetime) do
-    Timex.format!(datetime, "{relative}", :relative)
+    Calendar.DateTime.Format.rfc3339(datetime)
   end
 end

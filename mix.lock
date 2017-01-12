@@ -1,4 +1,5 @@
 %{"basic_auth": {:hex, :basic_auth, "2.0.0", "13a79d699c8530a15d7de84d2d58dc178f1c940f9f52306669797508adbe52cd", [:mix], [{:cowboy, "~> 1.0", [hex: :cowboy, optional: false]}, {:plug, "~> 0.14 or ~> 1.0", [hex: :plug, optional: false]}]},
+  "calendar": {:hex, :calendar, "0.17.0", "9079d42ed4b3e1e5ac2a994deaa63f51835682d98548feee338a829f0326d2eb", [:mix], [{:tzdata, "~> 0.5.8 or ~> 0.1.201603", [hex: :tzdata, optional: false]}]},
   "certifi": {:hex, :certifi, "0.7.0", "861a57f3808f7eb0c2d1802afeaae0fa5de813b0df0979153cbafcd853ababaf", [:rebar3], []},
   "combine": {:hex, :combine, "0.9.3", "192e609b48b3f2210494e26f85db1712657be1a8f15795656710317ea43fc449", [:mix], []},
   "connection": {:hex, :connection, "1.0.4", "a1cae72211f0eef17705aaededacac3eb30e6625b04a6117c1b2db6ace7d5976", [:mix], []},
